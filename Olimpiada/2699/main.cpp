@@ -4,15 +4,15 @@ using namespace std;
 
 int main()
 {
-    int n;
-    long long int p;
+
+    long long int p,n;
     cin>>n>>p;
-    cout<<1<<" ";
-    int originaln=n;
-    while(p>n)
+    long long int x=1;
+    while(x<=p)
     {
-        cout<<n<<" ";
-        n*=originaln;
+        cout<<x<<" ";
+        x*=n;
     }
+
     return 0;
 }
