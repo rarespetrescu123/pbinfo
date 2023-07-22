@@ -14,6 +14,8 @@ int main()
         for(int i=0;i<n;i++)
         {
             fin>>a;
+            if(a==0 && x==0)
+                cntcif++;
             while(a)
             {
                 if(a%10==x)
@@ -25,7 +27,21 @@ int main()
     }
     else
     {
-
+        int nrtaieturi=0;
+        for(int i=0;i<n;i++)
+        {
+            fin>>a;
+            while(a>12)
+            {
+                int u2=a%100;
+                if(10<=u2 && u2<=12)
+                    a/=100;
+                else
+                    a/=10;
+                nrtaieturi++;
+            }
+        }
+        fout<<nrtaieturi;
     }
     return 0;
 }
