@@ -19,6 +19,8 @@ int main()
 {
     int a,b,contor=0;
     cin>>a>>b;
+    if(a>b)
+        swap(a,b);
     for(int i=a;i<=b;i++)
         if(prim(i))
             contor++;
