@@ -17,8 +17,8 @@ bool prim(int x)
 }
 bool aproapeprim(int n)
 {
-    for(int i=2;i<=n/2;i++)
-        if(n%i==0 && prim(i)==true && prim(n/i)==true && i!=n/i)
+    for(int i=2;i*i<=n;i++)
+        if(n%i==0 && prim(i) && prim(n/i) && i!=n/i)
             return true;
     return false;
 }
