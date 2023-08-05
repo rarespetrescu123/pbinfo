@@ -5,12 +5,12 @@ using namespace std;
 
 int main()
 {
-    int n,a,r,s=0;
+    long long int n,a,r,s=0;
     cin>>n;
     for(int i=0;i<n;i++)
     {
         cin>>a>>r;
-        if(r==int(sqrt(a*a+3*a+1)))
+        if(r==a*a+3*a+1)
             s++;
 
     }
