@@ -4,16 +4,23 @@
 using namespace std;
 ifstream fin("joc.in");
 ofstream fout("joc.out");
-int v[100000];
+
+
 int main()
 {
     int n;
+    long long int x,sp=0;
     fin>>n;
     for(int i=0;i<n;i++)
-        fin>>v[i];
-    for(int i=2;i<=100000)
     {
-
+        fin>>x;
+        if(x<=sp+1)
+            sp+=x;
+        else
+            break;
     }
+    fout<<sp;
+
+
     return 0;
 }
