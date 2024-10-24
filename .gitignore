@@ -20,3 +20,6 @@ obj/
 
 # Built Visual Studio Code Extensions
 *.vsix
+.vscode
+*.dSYM
+.DS_Store
